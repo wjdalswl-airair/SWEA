@@ -27,6 +27,10 @@ def bingo(): # 빙고 검사
 
     lst = []
     for i in range(5): # 대각선 검사
+<<<<<<< HEAD
+=======
+        lst = []
+>>>>>>> c95e5c614389124a34325dfcf51d5b3b8fcd7558
         lst.append(arr[i][4-i])
     if lst == result:
         cnt += 1
