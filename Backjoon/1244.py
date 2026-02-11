@@ -49,7 +49,3 @@ for i in range(n): # 20개씩 나눠서 프린트
     print(lst[i],end=" ")
     if (i+1)%20 == 0:
         print()
-
-
-
-
