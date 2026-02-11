@@ -25,7 +25,7 @@ def bingo(): # 빙고 검사
 
     for i in range(5): # 대각선 검사
         lst = []
-        lst.append(arr[-i][-i])
+        lst.append(arr[i][4-i])
     if lst == result:
         return 1
 
