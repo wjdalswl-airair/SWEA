@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c0785d-e6c8-47f7-9081-dea528edd561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Backjoon/10431.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backjoon/2304.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backjoon/2839.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backjoon/1244.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backjoon/1244.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backjoon/13300" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backjoon/2578.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backjoon/2578.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenge.py" beforeDir="false" afterPath="$PROJECT_DIR$/challenge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backjoon/2304.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backjoon/2304.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +178,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,8 +200,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Backjoon/2304.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="8" />
+          <line>34</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,12 +20,17 @@ for i in range(N):
 top = max(lst)
 st,ed = 0,0
 
+s=0
+
 for i in range(1,M):
     if lst[i] == top:
         st = i
         break
     if lst[i-1]>lst[i]:
         lst[i] = lst[i-1]
+    s += lst[i]
+s += lst[0]
+
 
 for i in range(M-1,-1,-1):
     if lst[i] == top:
@@ -33,6 +38,7 @@ for i in range(M-1,-1,-1):
         break
     if lst[i-1]<lst[i]:
         lst[i-1] = lst[i]
+    s += lst[i]
 
-(ed-st+1)*top + sum()
-print(lst)
+result = (ed-st+1)*top + s
+print(result)
