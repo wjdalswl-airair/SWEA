@@ -8,26 +8,30 @@ call = [list(map(int,input().split())) for i in range(5)]
 
 def bingo(): # 빙고 검사
     result = [0,0,0,0,0]
+    cnt = 0
 
     for i in range(5): # 가로 검사
         if arr[i] == result:
-            return 1
+            cnt += 1
 
     lst = list(map(list,zip(*arr))) # 세로 검사
-    if lst == result:
-        return 1
+    for i in range(5):
+        if lst[i] == result:
+            cnt += 1
 
+    lst = []
     for i in range(5): # 대각선 검사
-        lst = []
         lst.append(arr[i][i])
     if lst == result:
-        return 1
+        cnt += 1
 
+    lst = []
     for i in range(5): # 대각선 검사
-        lst = []
-        lst.append(arr[-i][-i])
+        lst.append(arr[i][4-i])
     if lst == result:
-        return 1
+        cnt += 1
+
+    return cnt
 
 
 
@@ -40,12 +44,13 @@ def check(y,x): # 부른 숫자를 0으로 만드는 함수
 
 cnt = 0
 flag = 0
+s = 0
 for i in range(5):
     for j in range(5):
         cnt += 1
         check(i,j)
-        if bingo()==1:
-            flag =1
+        if bingo() >= 3:
+            flag = 1
             break
     if flag == 1:
         break
