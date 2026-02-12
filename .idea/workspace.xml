@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c0785d-e6c8-47f7-9081-dea528edd561" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mincoding/SAMSUNG_IM_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backjoon/2304.py" beforeDir="false" afterPath="$PROJECT_DIR$/Backjoon/2304.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
