@@ -1,5 +1,5 @@
-# 원하는 패턴이 나올 때까지 눌러야 하는 조명의 최소 클릭 횟수
-# M번 조명 클릭 시 M 배수 조명이 켜지거나 꺼진다
+# N명의 선수들에 대해 선수들의 실력값이 주어질 때
+# 실력 차이가 K 이하이면서 인원이 최대인 팀을 구성할때, 팀의 인원수
 
 import sys
 sys.stdin = open("input.txt", 'r')
@@ -8,17 +8,18 @@ T = int(input())
 for tc in range(1, T + 1):
     N,K = map(int,input().split())
     lst = list(map(int, input().split()))
-    lst = sorted(lst)
+    lst = sorted(lst) # 실력 순서로 나열
 
     Max = -21e8
-    for i in range(N):
-        cnt = 0
-        for j in range(i,N):
-            cnt+=1
-            if lst[j]==i+K:
+    for i in range(N-1):
+        cnt = 1 # 일단 선수 1 포함
+        for j in range(i+1,N):
+            if lst[j]-lst[i]<=K: # 실력 차이가 K 이하인 사람의 수 세기
+                cnt+=1
+            else: # 기준 선수와 실력 차이가 K 이상이면 그만 세기
                 break
-            elif Max <cnt:
-                Max = cnt
+        if Max<cnt: # 최대값 갱신
+            Max = cnt
 
     print(f"#{tc} {Max}")
 
