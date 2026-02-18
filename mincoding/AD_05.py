@@ -21,10 +21,10 @@ for tc in range(1, T+1):
         odd = (day+1)//2
         even = day//2
 
-        if one <= odd:
-            lack = max(0,two-even)
-            if 2*lack <= (odd-one):
-                break
+        if one <= odd:  # 필요한 것보다 실제가 더 많으면
+            lack = max(0,two-even)  # 부족한 +2 만큼을 계산
+            if 2*lack <= (odd-one):  # 실제 부족분보다 현재 물 준것이 더 많다면(충분)
+                break  # 반복문 종료
 
         day+=1
 
